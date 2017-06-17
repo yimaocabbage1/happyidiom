@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="@drawable/logintoproundbg">
+
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:drawableLeft="@drawable/icon_user"
+        android:drawablePadding="10dp"
+        android:ems="10"
+
+        android:hint="@string/etName">
+
+        <requestFocus />
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUser"
+        android:background="@android:drawable/edit_text"
+        android:drawableLeft="@drawable/icon_pass"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/etPass"
+        android:inputType="textPassword">
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword">
+        <CheckBox
+            android:id="@+id/cbRemember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_weight="1"
+            android:text="记住密码"
+            ></CheckBox>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btnselect"
+            android:text="@string/btnLogin"
+            android:id="@+id/btnLogin"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
